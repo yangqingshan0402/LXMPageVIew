@@ -1,0 +1,44 @@
+//
+//  LXM-PrefixHeader.pch
+//  LXMPageVIew
+//
+//  Created by jason on 2020/5/8.
+//  Copyright © 2020 jason. All rights reserved.
+//
+
+#ifndef LXM_PrefixHeader_pch
+#define LXM_PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import <Masonry.h>
+
+#define STATUS_BAR_HEIGHT statusBarHeight()
+
+#define NAVIGATION_BAR_HEIGHT 44
+
+#define MAIN_SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define MAIN_SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define TOP_NAVIGATION_ADD_TOP_SAFE_AREA_HEIGHT STATUS_BAR_HEIGHT+NAVIGATION_BAR_HEIGHT
+
+#define BOTTOM_SAFE_ARRA_HEIGHT bottomAreaHeight()
+
+static inline float statusBarHeight(){
+    if (@available(iOS 13.0, *)){
+       return [[[[[[UIApplication sharedApplication]windows] objectAtIndex:0] windowScene] statusBarManager] statusBarFrame].size.height;
+    }else{
+        return [[UIApplication sharedApplication]statusBarFrame].size.height;
+    }
+}
+
+static inline float bottomAreaHeight(){
+    if (@available(iOS 11.0, *)) {
+      return [[[UIApplication sharedApplication] windows] objectAtIndex:0].safeAreaInsets.bottom;
+    }else{
+      return 0;
+    }
+}
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LXM_PrefixHeader_pch */

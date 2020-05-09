@@ -1,0 +1,214 @@
+//
+//  ViewController.m
+//  LXMPageVIew
+//
+//  Created by jason on 2020/5/8.
+//  Copyright © 2020 jason. All rights reserved.
+//
+
+#import "ViewController.h"
+#import "LXMCustomNavigationBar.h"
+#import "LXMNestView.h"
+#import "LXMPageView.h"
+
+@interface ViewController ()<LXMNestViewDelegate, LXMPageViewDelegate, LXMPageViewDataSource, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) NSMutableArray <UIView *> *viewList;
+@property (nonatomic, strong) NSMutableArray <NSArray *> *dataSource;
+@property (nonatomic, strong) LXMPageView *contentView;
+@property (nonatomic, strong) LXMNestView *nestView;
+@property (nonatomic, strong) UIView* segmentView;
+
+@end
+
+@implementation ViewController
+
+#pragma mark - LXMPageViewDelegate & LXMPageViewDataSource
+
+- (NSUInteger)numberOfPagesInPageView:(LXMPageView *)pageView {
+    
+    return [_viewList count];
+}
+
+- (UIView *)pageView:(LXMPageView *)pageView pageAtIndex:(NSUInteger)index {
+    
+    return _viewList[index];
+}
+
+- (void)pageView:(LXMPageView *)pageView didScrollToIndex:(NSUInteger)index {
+    
+
+}
+
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+
+    NSUInteger pageIndex = tableView.tag;
+    return [_dataSource[pageIndex] count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
+    NSUInteger pageIndex = tableView.tag;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.textLabel.text = _dataSource[pageIndex][indexPath.row];
+    
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 50;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+
+    if (!_canContentScroll) {
+        // 这里通过固定contentOffset，来实现不滚动
+        scrollView.contentOffset = CGPointZero;
+    } else if (scrollView.contentOffset.y <= 0) {
+        scrollView.contentOffset = CGPointZero;
+        self.canContentScroll = NO;
+        // 通知容器可以开始滚动
+        _nestView.canNestTableViewScroll = YES;
+    }
+}
+
+#pragma mark - MFNestTableViewDelegate & MFNestTableViewDataSource
+
+- (void)nestViewInnerScrollViewCanScroll:(LXMNestView *)nextView {
+    self.canContentScroll = YES;
+}
+
+
+- (void)nestViewCanScroll:(LXMNestView *)nextView {
+
+    // 当容器开始可以滚动时，将所有内容设置回到顶部
+    for (id view in self.viewList) {
+        UIScrollView *scrollView;
+        if ([view isKindOfClass:[UIScrollView class]]) {
+            scrollView = view;
+        } else if ([view isKindOfClass:[UIWebView class]]) {
+            scrollView = ((UIWebView *)view).scrollView;
+        }
+        if (scrollView) {
+            scrollView.contentOffset = CGPointZero;
+        }
+    }
+}
+ 
+
+-(void)nestViewDidScroll:(UIScrollView *)scrollView{
+    
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self initDataSource];
+    [self setupSubViews];
+    // Do any additional setup after loading the view.
+}
+#pragma mark - private methods
+
+- (void)initDataSource {
+    
+    NSArray *pageDataCount = @[@2, @10, @30];
+    
+    _dataSource = [[NSMutableArray alloc] init];
+    for (int i = 0; i < pageDataCount.count; ++i) {
+        NSMutableArray *array = [[NSMutableArray alloc] init];
+        for (int j = 0; j < [pageDataCount[i] integerValue]; ++j) {
+            [array addObject:[NSString stringWithFormat:@"page - %d - row - %d", i, j]];
+        }
+        [_dataSource addObject:array];
+    }
+    
+    _viewList = [[NSMutableArray alloc] init];
+    
+    // 添加3个tableview
+    for (int i = 0; i < pageDataCount.count; ++i) {
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        tableView.tag = i;
+        [_viewList addObject:tableView];
+//        tableView.bounces = NO;
+    }
+    
+    // 添加ScrollView
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    scrollView.backgroundColor = [UIColor whiteColor];
+    UIImage *image = [UIImage imageNamed:@"img1.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width * image.size.height / image.size.width);
+    scrollView.contentSize = imageView.frame.size;
+    scrollView.alwaysBounceVertical = YES; // 设置为YES，当contentSize小于frame.size也可以滚动
+    [scrollView addSubview:imageView];
+    scrollView.delegate = self;  // 主要是为了在 scrollViewDidScroll: 中处理是否可以滚动
+    [_viewList addObject:scrollView];
+    
+    // 添加webview
+    UIWebView *webview = [[UIWebView alloc] init];
+    webview.backgroundColor = [UIColor whiteColor];
+    [webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.lymanli.com/"]]];
+    webview.scrollView.delegate = self;  // 主要是为了在 scrollViewDidScroll: 中处理是否可以滚动
+    [_viewList addObject:webview];
+}
+
+
+-(void)setupSubViews{
+    _nestView = [[LXMNestView alloc] initWithFrame:self.view.bounds];
+
+    [self initHeaderView];
+    [self initSegmentView];
+    [self initContentView];
+    
+    [self.view addSubview:_nestView];
+
+    _nestView.headerView = _headerView;
+    _nestView.contentView = _contentView;
+    _nestView.allowGestureEventPassViews = _viewList;
+    _nestView.delegate = self;
+
+}
+
+-(void)initSegmentView{
+    _nestView.segmentViewHeight = 40;
+}
+
+- (void)initHeaderView {
+    
+    // 因为将navigationBar设置了透明，所以这里设置将header的高度减少navigationBar的高度，
+    // 并将header的subview向上偏移，遮挡navigationBar透明后的空白
+//    CGFloat offsetTop = [self nestTableViewContentInsetTop:_nestTableView];
+    
+    UIImage *image = [UIImage imageNamed:@"img2.jpg"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), self.view.frame.size.width * image.size.height / image.size.width);
+    
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(imageView.frame), CGRectGetHeight(imageView.frame))];
+    [header addSubview:imageView];
+    
+    NSLog(@"headerFrame%@", NSStringFromCGRect(header.frame));
+    _headerView = header;
+}
+
+//这个高度应该是 screenHeight - 20(segment缩小后的高度)-(TOP_NAVIGATION_ADD_TOP_SAFE_AREA_HEIGHT)
+- (void)initContentView {
+    
+    _contentView = [[LXMPageView alloc] initWithFrame:CGRectMake(0, 0, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT - 20 - (TOP_NAVIGATION_ADD_TOP_SAFE_AREA_HEIGHT))];
+    _contentView.delegate = self;
+    _contentView.dataSource = self;
+}
+
+@end
