@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,8 @@
 		182C264F2466934600ED4EDE /* UIScrollView+ScrollAble.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C264E2466934600ED4EDE /* UIScrollView+ScrollAble.m */; };
 		182C26562466AFF600ED4EDE /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 182C26542466AFF600ED4EDE /* img2.jpg */; };
 		182C26572466AFF600ED4EDE /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 182C26552466AFF600ED4EDE /* img1.jpg */; };
+		182C265A246A9AD900ED4EDE /* LXMBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2659246A9AD900ED4EDE /* LXMBannerView.m */; };
+		182C265D246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C265C246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m */; };
 		930C273055F6521CFF58398B /* libPods-LXMPageVIew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,10 @@
 		182C264E2466934600ED4EDE /* UIScrollView+ScrollAble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollAble.m"; sourceTree = "<group>"; };
 		182C26542466AFF600ED4EDE /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		182C26552466AFF600ED4EDE /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		182C2658246A9AD900ED4EDE /* LXMBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMBannerView.h; sourceTree = "<group>"; };
+		182C2659246A9AD900ED4EDE /* LXMBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMBannerView.m; sourceTree = "<group>"; };
+		182C265B246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMBannerCollectionViewCell.h; sourceTree = "<group>"; };
+		182C265C246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMBannerCollectionViewCell.m; sourceTree = "<group>"; };
 		9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.debug.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4EB115923D6C51034141B2 /* Pods-LXMPageVIew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.release.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +156,10 @@
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
 				182C260924650E0300ED4EDE /* ViewController.h */,
 				182C260A24650E0300ED4EDE /* ViewController.m */,
+				182C2658246A9AD900ED4EDE /* LXMBannerView.h */,
+				182C2659246A9AD900ED4EDE /* LXMBannerView.m */,
+				182C265B246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.h */,
+				182C265C246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m */,
 				182C263C2465277600ED4EDE /* LXM-PrefixHeader.pch */,
 				182C2646246557C700ED4EDE /* LXMNestView */,
 				182C26422465398400ED4EDE /* LXMPageView */,
@@ -250,6 +260,7 @@
 				182C25FC24650E0300ED4EDE /* Sources */,
 				182C25FD24650E0300ED4EDE /* Frameworks */,
 				182C25FE24650E0300ED4EDE /* Resources */,
+				DA990058BBB2BEB19BE2DD94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -390,6 +401,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA990058BBB2BEB19BE2DD94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -406,6 +434,8 @@
 				182C26452465461200ED4EDE /* LXMPageView.m in Sources */,
 				182C261624650E0400ED4EDE /* main.m in Sources */,
 				182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */,
+				182C265A246A9AD900ED4EDE /* LXMBannerView.m in Sources */,
+				182C265D246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */,
 				182C263B246526D800ED4EDE /* LXMCustomNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

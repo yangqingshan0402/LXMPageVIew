@@ -34,6 +34,7 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     self.canNestTableViewScroll = YES;
+    _tableView.bounces = NO;
 }
 -(void)setHeaderView:(UIView *)headerView{
     if (_headerView == headerView) {

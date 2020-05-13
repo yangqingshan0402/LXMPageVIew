@@ -10,6 +10,8 @@
 #import "LXMCustomNavigationBar.h"
 #import "LXMNestView.h"
 #import "LXMPageView.h"
+#import <MJRefresh.h>
+#import "LXMBannerView.h"
 
 @interface ViewController ()<LXMNestViewDelegate, LXMPageViewDelegate, LXMPageViewDataSource, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIView *headerView;
@@ -69,7 +71,7 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-
+    NSLog(@"subcontent:%@", NSStringFromCGSize(scrollView.contentSize));
     if (!_canContentScroll) {
         // 这里通过固定contentOffset，来实现不滚动
         scrollView.contentOffset = CGPointZero;
@@ -142,6 +144,12 @@
         tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         tableView.tag = i;
         [_viewList addObject:tableView];
+        tableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                     
+                       [tableView.mj_header endRefreshing];
+                   });
+        }];
 //        tableView.bounces = NO;
     }
     
@@ -195,6 +203,13 @@
     UIImage *image = [UIImage imageNamed:@"img2.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, 0, CGRectGetWidth(self.view.frame), self.view.frame.size.width * image.size.height / image.size.width);
+    
+    LXMBannerView* bannerView = [[LXMBannerView alloc] initWithFrame:imageView.bounds];
+    [imageView addSubview:bannerView];
+    imageView.userInteractionEnabled = YES;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [bannerView beginMove];
+    });
     
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(imageView.frame), CGRectGetHeight(imageView.frame))];
     [header addSubview:imageView];
