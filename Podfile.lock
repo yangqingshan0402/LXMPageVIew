@@ -1,20 +1,26 @@
 PODS:
   - Masonry (1.1.0)
   - MJRefresh (3.4.1)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
 
 DEPENDENCIES:
   - Masonry
   - MJRefresh
+  - SDWebImage
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Masonry
     - MJRefresh
+    - SDWebImage
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 3153c59a363159092c08b2177ec3a7d09f90bfaf
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
 
-PODFILE CHECKSUM: b9092cdd8cdc14f01458dc3be3101cbe1899ef0d
+PODFILE CHECKSUM: 3fd42b584900b18222e278b24b41781bedaaf045
 
 COCOAPODS: 1.9.1

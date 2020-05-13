@@ -3,4 +3,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'LXMPageVIew' do
 pod 'Masonry'
 pod 'MJRefresh'
+pod 'SDWebImage'
 end

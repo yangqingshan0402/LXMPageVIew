@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LXMBannerCollectionViewCell : UICollectionViewCell
 @property (nonatomic, strong) UIImageView* bannerImageView;
+@property (nonatomic,strong) UILabel* label;
 
 @end
 

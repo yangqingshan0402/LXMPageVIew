@@ -26,6 +26,13 @@
 		182C26572466AFF600ED4EDE /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 182C26552466AFF600ED4EDE /* img1.jpg */; };
 		182C265A246A9AD900ED4EDE /* LXMBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2659246A9AD900ED4EDE /* LXMBannerView.m */; };
 		182C265D246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C265C246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m */; };
+		182C266F246BBFFF00ED4EDE /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2663246BBFFF00ED4EDE /* SDCycleScrollView.m */; };
+		182C2670246BBFFF00ED4EDE /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2664246BBFFF00ED4EDE /* UIView+SDExtension.m */; };
+		182C2671246BBFFF00ED4EDE /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2665246BBFFF00ED4EDE /* SDCollectionViewCell.m */; };
+		182C2672246BBFFF00ED4EDE /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2668246BBFFF00ED4EDE /* TADotView.m */; };
+		182C2673246BBFFF00ED4EDE /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2669246BBFFF00ED4EDE /* TAPageControl.m */; };
+		182C2674246BBFFF00ED4EDE /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C266A246BBFFF00ED4EDE /* TAAnimatedDotView.m */; };
+		182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C266B246BBFFF00ED4EDE /* TAAbstractDotView.m */; };
 		930C273055F6521CFF58398B /* libPods-LXMPageVIew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +92,20 @@
 		182C2659246A9AD900ED4EDE /* LXMBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMBannerView.m; sourceTree = "<group>"; };
 		182C265B246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMBannerCollectionViewCell.h; sourceTree = "<group>"; };
 		182C265C246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMBannerCollectionViewCell.m; sourceTree = "<group>"; };
+		182C2660246BBFFF00ED4EDE /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		182C2661246BBFFF00ED4EDE /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		182C2662246BBFFF00ED4EDE /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		182C2663246BBFFF00ED4EDE /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		182C2664246BBFFF00ED4EDE /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
+		182C2665246BBFFF00ED4EDE /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		182C2667246BBFFF00ED4EDE /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		182C2668246BBFFF00ED4EDE /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		182C2669246BBFFF00ED4EDE /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		182C266A246BBFFF00ED4EDE /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		182C266B246BBFFF00ED4EDE /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		182C266C246BBFFF00ED4EDE /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		182C266D246BBFFF00ED4EDE /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		182C266E246BBFFF00ED4EDE /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
 		9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.debug.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4EB115923D6C51034141B2 /* Pods-LXMPageVIew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.release.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -161,6 +182,7 @@
 				182C265B246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.h */,
 				182C265C246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m */,
 				182C263C2465277600ED4EDE /* LXM-PrefixHeader.pch */,
+				182C265F246BBFFF00ED4EDE /* SDCycleScrollView */,
 				182C2646246557C700ED4EDE /* LXMNestView */,
 				182C26422465398400ED4EDE /* LXMPageView */,
 				182C263E2465394000ED4EDE /* LXMSegmentView */,
@@ -239,6 +261,35 @@
 				182C26552466AFF600ED4EDE /* img1.jpg */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		182C265F246BBFFF00ED4EDE /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				182C2660246BBFFF00ED4EDE /* UIView+SDExtension.h */,
+				182C2661246BBFFF00ED4EDE /* SDCycleScrollView.h */,
+				182C2662246BBFFF00ED4EDE /* SDCollectionViewCell.h */,
+				182C2663246BBFFF00ED4EDE /* SDCycleScrollView.m */,
+				182C2664246BBFFF00ED4EDE /* UIView+SDExtension.m */,
+				182C2665246BBFFF00ED4EDE /* SDCollectionViewCell.m */,
+				182C2666246BBFFF00ED4EDE /* PageControl */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		182C2666246BBFFF00ED4EDE /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				182C2667246BBFFF00ED4EDE /* TAAbstractDotView.h */,
+				182C2668246BBFFF00ED4EDE /* TADotView.m */,
+				182C2669246BBFFF00ED4EDE /* TAPageControl.m */,
+				182C266A246BBFFF00ED4EDE /* TAAnimatedDotView.m */,
+				182C266B246BBFFF00ED4EDE /* TAAbstractDotView.m */,
+				182C266C246BBFFF00ED4EDE /* TADotView.h */,
+				182C266D246BBFFF00ED4EDE /* TAAnimatedDotView.h */,
+				182C266E246BBFFF00ED4EDE /* TAPageControl.h */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		2E47E7760E0E7EE5F8512FF4 /* Frameworks */ = {
@@ -429,12 +480,19 @@
 				182C260B24650E0300ED4EDE /* ViewController.m in Sources */,
 				182C260524650E0300ED4EDE /* AppDelegate.m in Sources */,
 				182C264C2465584400ED4EDE /* LXMNestTableView.m in Sources */,
+				182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */,
+				182C266F246BBFFF00ED4EDE /* SDCycleScrollView.m in Sources */,
 				182C264F2466934600ED4EDE /* UIScrollView+ScrollAble.m in Sources */,
 				182C2649246557F000ED4EDE /* LXMNestView.m in Sources */,
+				182C2670246BBFFF00ED4EDE /* UIView+SDExtension.m in Sources */,
+				182C2674246BBFFF00ED4EDE /* TAAnimatedDotView.m in Sources */,
+				182C2671246BBFFF00ED4EDE /* SDCollectionViewCell.m in Sources */,
 				182C26452465461200ED4EDE /* LXMPageView.m in Sources */,
 				182C261624650E0400ED4EDE /* main.m in Sources */,
+				182C2673246BBFFF00ED4EDE /* TAPageControl.m in Sources */,
 				182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */,
 				182C265A246A9AD900ED4EDE /* LXMBannerView.m in Sources */,
+				182C2672246BBFFF00ED4EDE /* TADotView.m in Sources */,
 				182C265D246A9C3D00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */,
 				182C263B246526D800ED4EDE /* LXMCustomNavigationBar.m in Sources */,
 			);

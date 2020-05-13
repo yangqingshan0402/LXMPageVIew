@@ -27,6 +27,9 @@
     _bannerImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     [self.contentView addSubview:_bannerImageView];
     [_bannerImageView setImage:[UIImage imageNamed:@"img2.jpg"]];
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 50, 50)];
+    [self.contentView addSubview:label];
+    _label  = label;
 }
 
 @end
