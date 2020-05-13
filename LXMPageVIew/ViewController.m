@@ -204,6 +204,7 @@
     UIImage *image = [UIImage imageNamed:@"img2.jpg"];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, -STATUS_BAR_HEIGHT, CGRectGetWidth(self.view.frame), self.view.frame.size.width * image.size.height / image.size.width);
+    imageView.userInteractionEnabled = YES;
     
     NSArray *imagesURLStrings = @[
     @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",

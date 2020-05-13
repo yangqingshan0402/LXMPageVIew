@@ -22,6 +22,11 @@
 
 #define BOTTOM_SAFE_ARRA_HEIGHT bottomAreaHeight()
 
+#define KIPHONE_ARGUMENT_HEIGHT 667.0/MAIN_SCREEN_HEIGHT
+#define KCONSTAINT_HEIGHT(y) y/(KIPHONE_ARGUMENT_HEIGHT)
+#define KIPHONE_ARGUMENT_WIDTH 375.0/MAIN_SCREEN_WIDTH
+#define KCONSTAINT_WIDTH(x) x/(KIPHONE_ARGUMENT_WIDTH)
+
 static inline float statusBarHeight(){
     if (@available(iOS 13.0, *)){
        return [[[[[[UIApplication sharedApplication]windows] objectAtIndex:0] windowScene] statusBarManager] statusBarFrame].size.height;
