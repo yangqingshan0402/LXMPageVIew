@@ -205,7 +205,7 @@
     UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
     imageView.frame = CGRectMake(0, -STATUS_BAR_HEIGHT, CGRectGetWidth(self.view.frame), self.view.frame.size.width * image.size.height / image.size.width);
     imageView.userInteractionEnabled = YES;
-    
+    /*
     NSArray *imagesURLStrings = @[
     @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
     @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
@@ -219,20 +219,23 @@
        cycleScrollView2.currentPageDotColor = [UIColor whiteColor]; // 自定义分页控件小圆标颜色
        [imageView addSubview:cycleScrollView2];
     cycleScrollView2.imageURLStringsGroup = imagesURLStrings;
+    */
     
-//    LXMBannerView* bannerView = [[LXMBannerView alloc] initWithFrame:imageView.bounds];
-//    [imageView addSubview:bannerView];
-//    imageView.userInteractionEnabled = YES;
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [bannerView beginMove];
-//    });
-//    bannerView.imageArray = @[@(1), @(2), @(3)];
+    LXMBannerView* bannerView = [[LXMBannerView alloc] initWithFrame:imageView.bounds];
+    [imageView addSubview:bannerView];
+    imageView.userInteractionEnabled = YES;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [bannerView beginMove];
+    });
+    bannerView.imageArray = @[@(1), @(2), @(3)];
     
     UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(imageView.frame) , CGRectGetHeight(imageView.frame)- STATUS_BAR_HEIGHT)];
     [header addSubview:imageView];
     
     NSLog(@"headerFrame%@", NSStringFromCGRect(header.frame));
     _headerView = header;
+    
+    
 }
 
 //这个高度应该是 screenHeight - 20(segment缩小后的高度)-(TOP_NAVIGATION_ADD_TOP_SAFE_AREA_HEIGHT)

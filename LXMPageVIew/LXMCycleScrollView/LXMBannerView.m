@@ -34,7 +34,7 @@
 }
 
 -(void)beginMove{
-    _timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(moveTimerAction) userInfo:nil repeats:YES];
+    _timer = [NSTimer timerWithTimeInterval:5.0 target:self selector:@selector(moveTimerAction) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
 
@@ -77,9 +77,15 @@
 
 }
 
-//-(NSInteger)index{
-//    return _innerIndex%_imageArray.count;
+//-(NSInteger)myIndex{
+//       CGFloat offset = _collectionView.contentOffset.x;
+//          NSInteger pageNum = round(offset / CGRectGetWidth(self.frame));
+//    return pageNum;
 //}
+
+-(NSInteger)index{
+    return _innerIndex%_imageArray.count;
+}
 
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self == [super initWithFrame:frame]) {
@@ -94,16 +100,18 @@
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
    LXMBannerCollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([LXMBannerCollectionViewCell class]) forIndexPath:indexPath];
-    self.index = indexPath.row%_imageArray.count;
-    cell.label.text = [NSString stringWithFormat:@"%d", self.index];
+    int index = indexPath.row%_imageArray.count;
+    cell.label.text = [NSString stringWithFormat:@"%d", index];
     
-    NSLog(@"index%d inner:%d", self.index, self.innerIndex);
+    NSLog(@"index%d inner:%d", self.index, self.innerIndex%3);
 
     return cell;
 }
 
+
+
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%@", indexPath.row);
+    NSLog(@"myIndex:%d", self.index);
 }
 -(void)commonInit{
     _flowLayout = [[UICollectionViewFlowLayout alloc] init];
