@@ -33,6 +33,8 @@
 		182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C266B246BBFFF00ED4EDE /* TAAbstractDotView.m */; };
 		182C267E246CDEBB00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C267B246CDEBA00ED4EDE /* LXMBannerCollectionViewCell.m */; };
 		182C267F246CDEBB00ED4EDE /* LXMBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C267D246CDEBA00ED4EDE /* LXMBannerView.m */; };
+		182C2683247683AF00ED4EDE /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2682247683AF00ED4EDE /* UIView+Radius.m */; };
+		182C26872476891900ED4EDE /* UIImage+FEBoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */; };
 		930C273055F6521CFF58398B /* libPods-LXMPageVIew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +108,10 @@
 		182C267B246CDEBA00ED4EDE /* LXMBannerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMBannerCollectionViewCell.m; sourceTree = "<group>"; };
 		182C267C246CDEBA00ED4EDE /* LXMBannerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMBannerCollectionViewCell.h; sourceTree = "<group>"; };
 		182C267D246CDEBA00ED4EDE /* LXMBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMBannerView.m; sourceTree = "<group>"; };
+		182C2681247683AF00ED4EDE /* UIView+Radius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Radius.h"; sourceTree = "<group>"; };
+		182C2682247683AF00ED4EDE /* UIView+Radius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Radius.m"; sourceTree = "<group>"; };
+		182C26852476891900ED4EDE /* UIImage+FEBoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FEBoxBlur.h"; sourceTree = "<group>"; };
+		182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FEBoxBlur.m"; sourceTree = "<group>"; };
 		9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.debug.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4EB115923D6C51034141B2 /* Pods-LXMPageVIew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.release.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +183,7 @@
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
 				182C260924650E0300ED4EDE /* ViewController.h */,
 				182C260A24650E0300ED4EDE /* ViewController.m */,
+				182C26802476822600ED4EDE /* ViewUtils */,
 				182C2679246CDEBA00ED4EDE /* LXMCycleScrollView */,
 				182C263C2465277600ED4EDE /* LXM-PrefixHeader.pch */,
 				182C265F246BBFFF00ED4EDE /* SDCycleScrollView */,
@@ -298,6 +305,25 @@
 				182C267D246CDEBA00ED4EDE /* LXMBannerView.m */,
 			);
 			path = LXMCycleScrollView;
+			sourceTree = "<group>";
+		};
+		182C26802476822600ED4EDE /* ViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				182C2681247683AF00ED4EDE /* UIView+Radius.h */,
+				182C2682247683AF00ED4EDE /* UIView+Radius.m */,
+				182C26842476891900ED4EDE /* MCBlur */,
+			);
+			path = ViewUtils;
+			sourceTree = "<group>";
+		};
+		182C26842476891900ED4EDE /* MCBlur */ = {
+			isa = PBXGroup;
+			children = (
+				182C26852476891900ED4EDE /* UIImage+FEBoxBlur.h */,
+				182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */,
+			);
+			path = MCBlur;
 			sourceTree = "<group>";
 		};
 		2E47E7760E0E7EE5F8512FF4 /* Frameworks */ = {
@@ -502,7 +528,9 @@
 				182C2673246BBFFF00ED4EDE /* TAPageControl.m in Sources */,
 				182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */,
 				182C2672246BBFFF00ED4EDE /* TADotView.m in Sources */,
+				182C2683247683AF00ED4EDE /* UIView+Radius.m in Sources */,
 				182C263B246526D800ED4EDE /* LXMCustomNavigationBar.m in Sources */,
+				182C26872476891900ED4EDE /* UIImage+FEBoxBlur.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,7 +700,9 @@
 			baseConfigurationReference = 9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G38AKGN648;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LXMPageView/LXM-PrefixHeader.pch";
 				INFOPLIST_FILE = LXMPageVIew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -681,6 +711,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqs.com.LXMPageVIew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_all_28;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -690,7 +721,9 @@
 			baseConfigurationReference = FC4EB115923D6C51034141B2 /* Pods-LXMPageVIew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G38AKGN648;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LXMPageView/LXM-PrefixHeader.pch";
 				INFOPLIST_FILE = LXMPageVIew/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -699,6 +732,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yqs.com.LXMPageVIew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_all_28;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
