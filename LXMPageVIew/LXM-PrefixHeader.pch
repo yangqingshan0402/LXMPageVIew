@@ -27,6 +27,9 @@
 #define KIPHONE_ARGUMENT_WIDTH 375.0/MAIN_SCREEN_WIDTH
 #define KCONSTAINT_WIDTH(x) x/(KIPHONE_ARGUMENT_WIDTH)
 
+#define KIPHONE_ARGUMENT_LANSCAPED_WIDTH 375/KMAIN_SCREEN_HEIGHT
+#define KCONSTRINT_LANSCAPE_WIDTH(X) X/(KIPHONE_ARGUMENT_LANSCAPED_WIDTH)
+
 static inline float statusBarHeight(){
     if (@available(iOS 13.0, *)){
        return [[[[[[UIApplication sharedApplication]windows] objectAtIndex:0] windowScene] statusBarManager] statusBarFrame].size.height;
