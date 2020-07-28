@@ -13,6 +13,7 @@
 #import <MJRefresh.h>
 #import "LXMBannerView.h"
 #import "SDCycleScrollView.h"
+#import "LXMVoiceView.h"
 
 @interface ViewController ()<LXMNestViewDelegate, LXMPageViewDelegate, LXMPageViewDataSource, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIView *headerView;
@@ -118,6 +119,11 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self initDataSource];
     [self setupSubViews];
+    
+    LXMVoiceView* voiceView = [[LXMVoiceView alloc] initWithFrame:CGRectMake(0, 20, 50, 50)];
+    voiceView.dynamicImage = [UIImage imageNamed:@"bg_mesh_device_off"];
+    [voiceView updateDynamicPercentage:30];
+    [self.view addSubview:voiceView];
     // Do any additional setup after loading the view.
 }
 #pragma mark - private methods
