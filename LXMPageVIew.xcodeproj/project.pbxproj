@@ -35,6 +35,7 @@
 		182C267F246CDEBB00ED4EDE /* LXMBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C267D246CDEBA00ED4EDE /* LXMBannerView.m */; };
 		182C2683247683AF00ED4EDE /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2682247683AF00ED4EDE /* UIView+Radius.m */; };
 		182C26872476891900ED4EDE /* UIImage+FEBoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */; };
+		18A13C14251B509E001A5751 /* LXMArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A13C13251B509E001A5751 /* LXMArrowView.m */; };
 		18C6C81324CFB0630040DCA1 /* LXMVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */; };
 		930C273055F6521CFF58398B /* libPods-LXMPageVIew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,8 @@
 		182C2682247683AF00ED4EDE /* UIView+Radius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Radius.m"; sourceTree = "<group>"; };
 		182C26852476891900ED4EDE /* UIImage+FEBoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FEBoxBlur.h"; sourceTree = "<group>"; };
 		182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FEBoxBlur.m"; sourceTree = "<group>"; };
+		18A13C12251B509E001A5751 /* LXMArrowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMArrowView.h; sourceTree = "<group>"; };
+		18A13C13251B509E001A5751 /* LXMArrowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMArrowView.m; sourceTree = "<group>"; };
 		18C6C81124CFB0630040DCA1 /* LXMVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMVoiceView.h; sourceTree = "<group>"; };
 		18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMVoiceView.m; sourceTree = "<group>"; };
 		9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.debug.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.debug.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
 				182C260924650E0300ED4EDE /* ViewController.h */,
 				182C260A24650E0300ED4EDE /* ViewController.m */,
+				18A13C11251B507B001A5751 /* UIBezierPath */,
 				18C6C81024CFB02F0040DCA1 /* voiceView */,
 				182C26802476822600ED4EDE /* ViewUtils */,
 				182C2679246CDEBA00ED4EDE /* LXMCycleScrollView */,
@@ -328,6 +332,15 @@
 				182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */,
 			);
 			path = MCBlur;
+			sourceTree = "<group>";
+		};
+		18A13C11251B507B001A5751 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				18A13C12251B509E001A5751 /* LXMArrowView.h */,
+				18A13C13251B509E001A5751 /* LXMArrowView.m */,
+			);
+			path = UIBezierPath;
 			sourceTree = "<group>";
 		};
 		18C6C81024CFB02F0040DCA1 /* voiceView */ = {
@@ -529,6 +542,7 @@
 				182C260524650E0300ED4EDE /* AppDelegate.m in Sources */,
 				182C264C2465584400ED4EDE /* LXMNestTableView.m in Sources */,
 				182C267E246CDEBB00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */,
+				18A13C14251B509E001A5751 /* LXMArrowView.m in Sources */,
 				182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */,
 				182C266F246BBFFF00ED4EDE /* SDCycleScrollView.m in Sources */,
 				182C264F2466934600ED4EDE /* UIScrollView+ScrollAble.m in Sources */,
