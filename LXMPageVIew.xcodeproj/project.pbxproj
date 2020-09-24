@@ -9,19 +9,12 @@
 /* Begin PBXBuildFile section */
 		182C260524650E0300ED4EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260424650E0300ED4EDE /* AppDelegate.m */; };
 		182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260724650E0300ED4EDE /* SceneDelegate.m */; };
-		182C260B24650E0300ED4EDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260A24650E0300ED4EDE /* ViewController.m */; };
 		182C260E24650E0300ED4EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182C260C24650E0300ED4EDE /* Main.storyboard */; };
 		182C261024650E0400ED4EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182C260F24650E0400ED4EDE /* Assets.xcassets */; };
 		182C261324650E0400ED4EDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182C261124650E0400ED4EDE /* LaunchScreen.storyboard */; };
 		182C261624650E0400ED4EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C261524650E0400ED4EDE /* main.m */; };
 		182C262024650E0400ED4EDE /* LXMPageVIewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C261F24650E0400ED4EDE /* LXMPageVIewTests.m */; };
 		182C262B24650E0400ED4EDE /* LXMPageVIewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C262A24650E0400ED4EDE /* LXMPageVIewUITests.m */; };
-		182C263B246526D800ED4EDE /* LXMCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C263A246526D700ED4EDE /* LXMCustomNavigationBar.m */; };
-		182C26412465395700ED4EDE /* LXMSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C26402465395700ED4EDE /* LXMSegmentView.m */; };
-		182C26452465461200ED4EDE /* LXMPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C26442465461200ED4EDE /* LXMPageView.m */; };
-		182C2649246557F000ED4EDE /* LXMNestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2648246557F000ED4EDE /* LXMNestView.m */; };
-		182C264C2465584400ED4EDE /* LXMNestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C264B2465584400ED4EDE /* LXMNestTableView.m */; };
-		182C264F2466934600ED4EDE /* UIScrollView+ScrollAble.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C264E2466934600ED4EDE /* UIScrollView+ScrollAble.m */; };
 		182C26562466AFF600ED4EDE /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 182C26542466AFF600ED4EDE /* img2.jpg */; };
 		182C26572466AFF600ED4EDE /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 182C26552466AFF600ED4EDE /* img1.jpg */; };
 		182C266F246BBFFF00ED4EDE /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2663246BBFFF00ED4EDE /* SDCycleScrollView.m */; };
@@ -36,6 +29,16 @@
 		182C2683247683AF00ED4EDE /* UIView+Radius.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C2682247683AF00ED4EDE /* UIView+Radius.m */; };
 		182C26872476891900ED4EDE /* UIImage+FEBoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */; };
 		18A13C14251B509E001A5751 /* LXMArrowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A13C13251B509E001A5751 /* LXMArrowView.m */; };
+		18C6B2BD251C79950003E3D4 /* TRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2BC251C79950003E3D4 /* TRViewController.m */; };
+		18C6B2C0251C7AC70003E3D4 /* LXMArrowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2BF251C7AC70003E3D4 /* LXMArrowViewController.m */; };
+		18C6B2C3251C7AEC0003E3D4 /* LXMVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2C2251C7AEC0003E3D4 /* LXMVoiceViewController.m */; };
+		18C6B2D7251C7C020003E3D4 /* LXMPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2C6251C7C020003E3D4 /* LXMPageView.m */; };
+		18C6B2D8251C7C020003E3D4 /* LXMPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2C8251C7C020003E3D4 /* LXMPageViewController.m */; };
+		18C6B2D9251C7C020003E3D4 /* LXMNestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2CA251C7C020003E3D4 /* LXMNestView.m */; };
+		18C6B2DA251C7C020003E3D4 /* UIScrollView+ScrollAble.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2CC251C7C020003E3D4 /* UIScrollView+ScrollAble.m */; };
+		18C6B2DB251C7C020003E3D4 /* LXMNestTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2CF251C7C020003E3D4 /* LXMNestTableView.m */; };
+		18C6B2DC251C7C020003E3D4 /* LXMSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2D3251C7C020003E3D4 /* LXMSegmentView.m */; };
+		18C6B2DD251C7C020003E3D4 /* LXMCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2D6251C7C020003E3D4 /* LXMCustomNavigationBar.m */; };
 		18C6C81324CFB0630040DCA1 /* LXMVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */; };
 		930C273055F6521CFF58398B /* libPods-LXMPageVIew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */; };
 /* End PBXBuildFile section */
@@ -64,8 +67,6 @@
 		182C260424650E0300ED4EDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		182C260624650E0300ED4EDE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		182C260724650E0300ED4EDE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		182C260924650E0300ED4EDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		182C260A24650E0300ED4EDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		182C260D24650E0300ED4EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		182C260F24650E0400ED4EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182C261224650E0400ED4EDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,19 +78,7 @@
 		182C262624650E0400ED4EDE /* LXMPageVIewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXMPageVIewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182C262A24650E0400ED4EDE /* LXMPageVIewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMPageVIewUITests.m; sourceTree = "<group>"; };
 		182C262C24650E0400ED4EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		182C2639246526D700ED4EDE /* LXMCustomNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMCustomNavigationBar.h; sourceTree = "<group>"; };
-		182C263A246526D700ED4EDE /* LXMCustomNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMCustomNavigationBar.m; sourceTree = "<group>"; };
 		182C263C2465277600ED4EDE /* LXM-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LXM-PrefixHeader.pch"; sourceTree = "<group>"; };
-		182C263F2465395700ED4EDE /* LXMSegmentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMSegmentView.h; sourceTree = "<group>"; };
-		182C26402465395700ED4EDE /* LXMSegmentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMSegmentView.m; sourceTree = "<group>"; };
-		182C26432465461200ED4EDE /* LXMPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMPageView.h; sourceTree = "<group>"; };
-		182C26442465461200ED4EDE /* LXMPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMPageView.m; sourceTree = "<group>"; };
-		182C2647246557F000ED4EDE /* LXMNestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMNestView.h; sourceTree = "<group>"; };
-		182C2648246557F000ED4EDE /* LXMNestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMNestView.m; sourceTree = "<group>"; };
-		182C264A2465584400ED4EDE /* LXMNestTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMNestTableView.h; sourceTree = "<group>"; };
-		182C264B2465584400ED4EDE /* LXMNestTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMNestTableView.m; sourceTree = "<group>"; };
-		182C264D2466934600ED4EDE /* UIScrollView+ScrollAble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollAble.h"; sourceTree = "<group>"; };
-		182C264E2466934600ED4EDE /* UIScrollView+ScrollAble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollAble.m"; sourceTree = "<group>"; };
 		182C26542466AFF600ED4EDE /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		182C26552466AFF600ED4EDE /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
 		182C2660246BBFFF00ED4EDE /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
@@ -116,6 +105,26 @@
 		182C26862476891900ED4EDE /* UIImage+FEBoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FEBoxBlur.m"; sourceTree = "<group>"; };
 		18A13C12251B509E001A5751 /* LXMArrowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMArrowView.h; sourceTree = "<group>"; };
 		18A13C13251B509E001A5751 /* LXMArrowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMArrowView.m; sourceTree = "<group>"; };
+		18C6B2BB251C79950003E3D4 /* TRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TRViewController.h; sourceTree = "<group>"; };
+		18C6B2BC251C79950003E3D4 /* TRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRViewController.m; sourceTree = "<group>"; };
+		18C6B2BE251C7AC70003E3D4 /* LXMArrowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMArrowViewController.h; sourceTree = "<group>"; };
+		18C6B2BF251C7AC70003E3D4 /* LXMArrowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMArrowViewController.m; sourceTree = "<group>"; };
+		18C6B2C1251C7AEC0003E3D4 /* LXMVoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMVoiceViewController.h; sourceTree = "<group>"; };
+		18C6B2C2251C7AEC0003E3D4 /* LXMVoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMVoiceViewController.m; sourceTree = "<group>"; };
+		18C6B2C6251C7C020003E3D4 /* LXMPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMPageView.m; sourceTree = "<group>"; };
+		18C6B2C7251C7C020003E3D4 /* LXMPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMPageView.h; sourceTree = "<group>"; };
+		18C6B2C8251C7C020003E3D4 /* LXMPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMPageViewController.m; sourceTree = "<group>"; };
+		18C6B2CA251C7C020003E3D4 /* LXMNestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMNestView.m; sourceTree = "<group>"; };
+		18C6B2CB251C7C020003E3D4 /* LXMNestTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMNestTableView.h; sourceTree = "<group>"; };
+		18C6B2CC251C7C020003E3D4 /* UIScrollView+ScrollAble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+ScrollAble.m"; sourceTree = "<group>"; };
+		18C6B2CD251C7C020003E3D4 /* LXMNestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMNestView.h; sourceTree = "<group>"; };
+		18C6B2CE251C7C020003E3D4 /* UIScrollView+ScrollAble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+ScrollAble.h"; sourceTree = "<group>"; };
+		18C6B2CF251C7C020003E3D4 /* LXMNestTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMNestTableView.m; sourceTree = "<group>"; };
+		18C6B2D0251C7C020003E3D4 /* LXMPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMPageViewController.h; sourceTree = "<group>"; };
+		18C6B2D2251C7C020003E3D4 /* LXMSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMSegmentView.h; sourceTree = "<group>"; };
+		18C6B2D3251C7C020003E3D4 /* LXMSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMSegmentView.m; sourceTree = "<group>"; };
+		18C6B2D5251C7C020003E3D4 /* LXMCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXMCustomNavigationBar.h; sourceTree = "<group>"; };
+		18C6B2D6251C7C020003E3D4 /* LXMCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMCustomNavigationBar.m; sourceTree = "<group>"; };
 		18C6C81124CFB0630040DCA1 /* LXMVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMVoiceView.h; sourceTree = "<group>"; };
 		18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMVoiceView.m; sourceTree = "<group>"; };
 		9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.debug.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,18 +196,15 @@
 				182C260424650E0300ED4EDE /* AppDelegate.m */,
 				182C260624650E0300ED4EDE /* SceneDelegate.h */,
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
-				182C260924650E0300ED4EDE /* ViewController.h */,
-				182C260A24650E0300ED4EDE /* ViewController.m */,
+				18C6B2BB251C79950003E3D4 /* TRViewController.h */,
+				18C6B2BC251C79950003E3D4 /* TRViewController.m */,
+				18C6B2C4251C7C020003E3D4 /* pageView */,
 				18A13C11251B507B001A5751 /* UIBezierPath */,
 				18C6C81024CFB02F0040DCA1 /* voiceView */,
 				182C26802476822600ED4EDE /* ViewUtils */,
 				182C2679246CDEBA00ED4EDE /* LXMCycleScrollView */,
 				182C263C2465277600ED4EDE /* LXM-PrefixHeader.pch */,
 				182C265F246BBFFF00ED4EDE /* SDCycleScrollView */,
-				182C2646246557C700ED4EDE /* LXMNestView */,
-				182C26422465398400ED4EDE /* LXMPageView */,
-				182C263E2465394000ED4EDE /* LXMSegmentView */,
-				182C2638246526B000ED4EDE /* LXMCustomNavigationBar */,
 				182C260C24650E0300ED4EDE /* Main.storyboard */,
 				182C260F24650E0400ED4EDE /* Assets.xcassets */,
 				182C261124650E0400ED4EDE /* LaunchScreen.storyboard */,
@@ -224,46 +230,6 @@
 				182C262C24650E0400ED4EDE /* Info.plist */,
 			);
 			path = LXMPageVIewUITests;
-			sourceTree = "<group>";
-		};
-		182C2638246526B000ED4EDE /* LXMCustomNavigationBar */ = {
-			isa = PBXGroup;
-			children = (
-				182C2639246526D700ED4EDE /* LXMCustomNavigationBar.h */,
-				182C263A246526D700ED4EDE /* LXMCustomNavigationBar.m */,
-			);
-			path = LXMCustomNavigationBar;
-			sourceTree = "<group>";
-		};
-		182C263E2465394000ED4EDE /* LXMSegmentView */ = {
-			isa = PBXGroup;
-			children = (
-				182C263F2465395700ED4EDE /* LXMSegmentView.h */,
-				182C26402465395700ED4EDE /* LXMSegmentView.m */,
-			);
-			path = LXMSegmentView;
-			sourceTree = "<group>";
-		};
-		182C26422465398400ED4EDE /* LXMPageView */ = {
-			isa = PBXGroup;
-			children = (
-				182C26432465461200ED4EDE /* LXMPageView.h */,
-				182C26442465461200ED4EDE /* LXMPageView.m */,
-			);
-			path = LXMPageView;
-			sourceTree = "<group>";
-		};
-		182C2646246557C700ED4EDE /* LXMNestView */ = {
-			isa = PBXGroup;
-			children = (
-				182C2647246557F000ED4EDE /* LXMNestView.h */,
-				182C2648246557F000ED4EDE /* LXMNestView.m */,
-				182C264A2465584400ED4EDE /* LXMNestTableView.h */,
-				182C264B2465584400ED4EDE /* LXMNestTableView.m */,
-				182C264D2466934600ED4EDE /* UIScrollView+ScrollAble.h */,
-				182C264E2466934600ED4EDE /* UIScrollView+ScrollAble.m */,
-			);
-			path = LXMNestView;
 			sourceTree = "<group>";
 		};
 		182C26532466AFF600ED4EDE /* image */ = {
@@ -339,8 +305,63 @@
 			children = (
 				18A13C12251B509E001A5751 /* LXMArrowView.h */,
 				18A13C13251B509E001A5751 /* LXMArrowView.m */,
+				18C6B2BE251C7AC70003E3D4 /* LXMArrowViewController.h */,
+				18C6B2BF251C7AC70003E3D4 /* LXMArrowViewController.m */,
 			);
 			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		18C6B2C4251C7C020003E3D4 /* pageView */ = {
+			isa = PBXGroup;
+			children = (
+				18C6B2D4251C7C020003E3D4 /* LXMCustomNavigationBar */,
+				18C6B2C9251C7C020003E3D4 /* LXMNestView */,
+				18C6B2C5251C7C020003E3D4 /* LXMPageView */,
+				18C6B2D0251C7C020003E3D4 /* LXMPageViewController.h */,
+				18C6B2C8251C7C020003E3D4 /* LXMPageViewController.m */,
+				18C6B2D1251C7C020003E3D4 /* LXMSegmentView */,
+			);
+			path = pageView;
+			sourceTree = "<group>";
+		};
+		18C6B2C5251C7C020003E3D4 /* LXMPageView */ = {
+			isa = PBXGroup;
+			children = (
+				18C6B2C6251C7C020003E3D4 /* LXMPageView.m */,
+				18C6B2C7251C7C020003E3D4 /* LXMPageView.h */,
+			);
+			path = LXMPageView;
+			sourceTree = "<group>";
+		};
+		18C6B2C9251C7C020003E3D4 /* LXMNestView */ = {
+			isa = PBXGroup;
+			children = (
+				18C6B2CA251C7C020003E3D4 /* LXMNestView.m */,
+				18C6B2CB251C7C020003E3D4 /* LXMNestTableView.h */,
+				18C6B2CC251C7C020003E3D4 /* UIScrollView+ScrollAble.m */,
+				18C6B2CD251C7C020003E3D4 /* LXMNestView.h */,
+				18C6B2CE251C7C020003E3D4 /* UIScrollView+ScrollAble.h */,
+				18C6B2CF251C7C020003E3D4 /* LXMNestTableView.m */,
+			);
+			path = LXMNestView;
+			sourceTree = "<group>";
+		};
+		18C6B2D1251C7C020003E3D4 /* LXMSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				18C6B2D2251C7C020003E3D4 /* LXMSegmentView.h */,
+				18C6B2D3251C7C020003E3D4 /* LXMSegmentView.m */,
+			);
+			path = LXMSegmentView;
+			sourceTree = "<group>";
+		};
+		18C6B2D4251C7C020003E3D4 /* LXMCustomNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				18C6B2D5251C7C020003E3D4 /* LXMCustomNavigationBar.h */,
+				18C6B2D6251C7C020003E3D4 /* LXMCustomNavigationBar.m */,
+			);
+			path = LXMCustomNavigationBar;
 			sourceTree = "<group>";
 		};
 		18C6C81024CFB02F0040DCA1 /* voiceView */ = {
@@ -348,6 +369,8 @@
 			children = (
 				18C6C81124CFB0630040DCA1 /* LXMVoiceView.h */,
 				18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */,
+				18C6B2C1251C7AEC0003E3D4 /* LXMVoiceViewController.h */,
+				18C6B2C2251C7AEC0003E3D4 /* LXMVoiceViewController.m */,
 			);
 			path = voiceView;
 			sourceTree = "<group>";
@@ -536,29 +559,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182C26412465395700ED4EDE /* LXMSegmentView.m in Sources */,
 				18C6C81324CFB0630040DCA1 /* LXMVoiceView.m in Sources */,
-				182C260B24650E0300ED4EDE /* ViewController.m in Sources */,
+				18C6B2D8251C7C020003E3D4 /* LXMPageViewController.m in Sources */,
+				18C6B2DD251C7C020003E3D4 /* LXMCustomNavigationBar.m in Sources */,
+				18C6B2D7251C7C020003E3D4 /* LXMPageView.m in Sources */,
+				18C6B2DB251C7C020003E3D4 /* LXMNestTableView.m in Sources */,
+				18C6B2BD251C79950003E3D4 /* TRViewController.m in Sources */,
 				182C260524650E0300ED4EDE /* AppDelegate.m in Sources */,
-				182C264C2465584400ED4EDE /* LXMNestTableView.m in Sources */,
 				182C267E246CDEBB00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */,
+				18C6B2DC251C7C020003E3D4 /* LXMSegmentView.m in Sources */,
 				18A13C14251B509E001A5751 /* LXMArrowView.m in Sources */,
 				182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */,
+				18C6B2DA251C7C020003E3D4 /* UIScrollView+ScrollAble.m in Sources */,
 				182C266F246BBFFF00ED4EDE /* SDCycleScrollView.m in Sources */,
-				182C264F2466934600ED4EDE /* UIScrollView+ScrollAble.m in Sources */,
-				182C2649246557F000ED4EDE /* LXMNestView.m in Sources */,
 				182C2670246BBFFF00ED4EDE /* UIView+SDExtension.m in Sources */,
 				182C2674246BBFFF00ED4EDE /* TAAnimatedDotView.m in Sources */,
 				182C2671246BBFFF00ED4EDE /* SDCollectionViewCell.m in Sources */,
-				182C26452465461200ED4EDE /* LXMPageView.m in Sources */,
+				18C6B2D9251C7C020003E3D4 /* LXMNestView.m in Sources */,
 				182C261624650E0400ED4EDE /* main.m in Sources */,
 				182C267F246CDEBB00ED4EDE /* LXMBannerView.m in Sources */,
 				182C2673246BBFFF00ED4EDE /* TAPageControl.m in Sources */,
 				182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */,
 				182C2672246BBFFF00ED4EDE /* TADotView.m in Sources */,
 				182C2683247683AF00ED4EDE /* UIView+Radius.m in Sources */,
-				182C263B246526D800ED4EDE /* LXMCustomNavigationBar.m in Sources */,
+				18C6B2C0251C7AC70003E3D4 /* LXMArrowViewController.m in Sources */,
 				182C26872476891900ED4EDE /* UIImage+FEBoxBlur.m in Sources */,
+				18C6B2C3251C7AEC0003E3D4 /* LXMVoiceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

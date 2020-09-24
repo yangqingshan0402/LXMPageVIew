@@ -1,8 +1,8 @@
 //
-//  LXMArrowView.h
+//  TRViewController.h
 //  LXMPageVIew
 //
-//  Created by jason on 2020/9/23.
+//  Created by jason on 2020/9/24.
 //  Copyright © 2020 jason. All rights reserved.
 //
 
@@ -10,8 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LXMArrowView : UIView
-- (void)drawLineAndRectanglePositionAtX:(CGFloat)x;
+@interface TRViewController : UIViewController
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -26,7 +26,7 @@
     [self.bezierPath moveToPoint:CGPointZero];
     [self.bezierPath addLineToPoint:CGPointMake(self.frame.size.width*x - 10, 0)];
     [self.bezierPath addLineToPoint:CGPointMake(self.frame.size.width*x, -5)];
-    [self.bezierPath addLineToPoint:CGPointMake(self.frame.size.width*2 + 10, 0)];
+    [self.bezierPath addLineToPoint:CGPointMake(self.frame.size.width*x + 10, 0)];
     [self.bezierPath addLineToPoint:CGPointMake(self.frame.size.width, 0)];
     
     self.shapeLayer = [CAShapeLayer new];

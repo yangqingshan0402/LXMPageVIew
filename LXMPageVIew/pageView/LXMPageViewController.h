@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface LXMPageViewController : UIViewController
 
 @property (nonatomic,assign) BOOL canContentScroll;
 
