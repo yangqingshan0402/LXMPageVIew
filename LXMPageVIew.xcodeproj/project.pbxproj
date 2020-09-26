@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180032B8251EEC310015055B /* LMHShopCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032AF251EEC310015055B /* LMHShopCell.m */; };
+		180032B9251EEC310015055B /* shop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 180032B0251EEC310015055B /* shop.plist */; };
+		180032BA251EEC310015055B /* LMHShop.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032B1251EEC310015055B /* LMHShop.m */; };
+		180032BB251EEC310015055B /* LMHShopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180032B3251EEC310015055B /* LMHShopCell.xib */; };
+		180032BC251EEC310015055B /* LMHWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032B6251EEC310015055B /* LMHWaterFallLayout.m */; };
+		180032BD251EEC310015055B /* LMHWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032B7251EEC310015055B /* LMHWaterFallController.m */; };
 		182C260524650E0300ED4EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260424650E0300ED4EDE /* AppDelegate.m */; };
 		182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260724650E0300ED4EDE /* SceneDelegate.m */; };
 		182C260E24650E0300ED4EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182C260C24650E0300ED4EDE /* Main.storyboard */; };
@@ -62,6 +68,16 @@
 
 /* Begin PBXFileReference section */
 		0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LXMPageVIew.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		180032AC251EEC310015055B /* LMHWaterFallController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHWaterFallController.h; sourceTree = "<group>"; };
+		180032AE251EEC310015055B /* LMHShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHShop.h; sourceTree = "<group>"; };
+		180032AF251EEC310015055B /* LMHShopCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHShopCell.m; sourceTree = "<group>"; };
+		180032B0251EEC310015055B /* shop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = shop.plist; sourceTree = "<group>"; };
+		180032B1251EEC310015055B /* LMHShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHShop.m; sourceTree = "<group>"; };
+		180032B2251EEC310015055B /* LMHShopCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHShopCell.h; sourceTree = "<group>"; };
+		180032B3251EEC310015055B /* LMHShopCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMHShopCell.xib; sourceTree = "<group>"; };
+		180032B5251EEC310015055B /* LMHWaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHWaterFallLayout.h; sourceTree = "<group>"; };
+		180032B6251EEC310015055B /* LMHWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHWaterFallLayout.m; sourceTree = "<group>"; };
+		180032B7251EEC310015055B /* LMHWaterFallController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHWaterFallController.m; sourceTree = "<group>"; };
 		182C260024650E0300ED4EDE /* LXMPageVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXMPageVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182C260324650E0300ED4EDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		182C260424650E0300ED4EDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -166,6 +182,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		180032AB251EEC310015055B /* waterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				180032AC251EEC310015055B /* LMHWaterFallController.h */,
+				180032B7251EEC310015055B /* LMHWaterFallController.m */,
+				180032AD251EEC310015055B /* shops */,
+				180032B4251EEC310015055B /* WaterFallLayout */,
+			);
+			path = waterFlow;
+			sourceTree = "<group>";
+		};
+		180032AD251EEC310015055B /* shops */ = {
+			isa = PBXGroup;
+			children = (
+				180032AE251EEC310015055B /* LMHShop.h */,
+				180032AF251EEC310015055B /* LMHShopCell.m */,
+				180032B0251EEC310015055B /* shop.plist */,
+				180032B1251EEC310015055B /* LMHShop.m */,
+				180032B2251EEC310015055B /* LMHShopCell.h */,
+				180032B3251EEC310015055B /* LMHShopCell.xib */,
+			);
+			path = shops;
+			sourceTree = "<group>";
+		};
+		180032B4251EEC310015055B /* WaterFallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				180032B5251EEC310015055B /* LMHWaterFallLayout.h */,
+				180032B6251EEC310015055B /* LMHWaterFallLayout.m */,
+			);
+			path = WaterFallLayout;
+			sourceTree = "<group>";
+		};
 		182C25F724650E0300ED4EDE = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +247,7 @@
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
 				18C6B2BB251C79950003E3D4 /* TRViewController.h */,
 				18C6B2BC251C79950003E3D4 /* TRViewController.m */,
+				180032AB251EEC310015055B /* waterFlow */,
 				18C6B2C4251C7C020003E3D4 /* pageView */,
 				18A13C11251B507B001A5751 /* UIBezierPath */,
 				18C6C81024CFB02F0040DCA1 /* voiceView */,
@@ -490,8 +540,10 @@
 			files = (
 				182C261324650E0400ED4EDE /* LaunchScreen.storyboard in Resources */,
 				182C26572466AFF600ED4EDE /* img1.jpg in Resources */,
+				180032B9251EEC310015055B /* shop.plist in Resources */,
 				182C261024650E0400ED4EDE /* Assets.xcassets in Resources */,
 				182C26562466AFF600ED4EDE /* img2.jpg in Resources */,
+				180032BB251EEC310015055B /* LMHShopCell.xib in Resources */,
 				182C260E24650E0300ED4EDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,12 +614,14 @@
 				18C6C81324CFB0630040DCA1 /* LXMVoiceView.m in Sources */,
 				18C6B2D8251C7C020003E3D4 /* LXMPageViewController.m in Sources */,
 				18C6B2DD251C7C020003E3D4 /* LXMCustomNavigationBar.m in Sources */,
+				180032BA251EEC310015055B /* LMHShop.m in Sources */,
 				18C6B2D7251C7C020003E3D4 /* LXMPageView.m in Sources */,
 				18C6B2DB251C7C020003E3D4 /* LXMNestTableView.m in Sources */,
 				18C6B2BD251C79950003E3D4 /* TRViewController.m in Sources */,
 				182C260524650E0300ED4EDE /* AppDelegate.m in Sources */,
 				182C267E246CDEBB00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */,
 				18C6B2DC251C7C020003E3D4 /* LXMSegmentView.m in Sources */,
+				180032BD251EEC310015055B /* LMHWaterFallController.m in Sources */,
 				18A13C14251B509E001A5751 /* LXMArrowView.m in Sources */,
 				182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */,
 				18C6B2DA251C7C020003E3D4 /* UIScrollView+ScrollAble.m in Sources */,
@@ -577,9 +631,11 @@
 				182C2671246BBFFF00ED4EDE /* SDCollectionViewCell.m in Sources */,
 				18C6B2D9251C7C020003E3D4 /* LXMNestView.m in Sources */,
 				182C261624650E0400ED4EDE /* main.m in Sources */,
+				180032BC251EEC310015055B /* LMHWaterFallLayout.m in Sources */,
 				182C267F246CDEBB00ED4EDE /* LXMBannerView.m in Sources */,
 				182C2673246BBFFF00ED4EDE /* TAPageControl.m in Sources */,
 				182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */,
+				180032B8251EEC310015055B /* LMHShopCell.m in Sources */,
 				182C2672246BBFFF00ED4EDE /* TADotView.m in Sources */,
 				182C2683247683AF00ED4EDE /* UIView+Radius.m in Sources */,
 				18C6B2C0251C7AC70003E3D4 /* LXMArrowViewController.m in Sources */,

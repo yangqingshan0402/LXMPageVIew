@@ -4,4 +4,5 @@ target 'LXMPageVIew' do
 pod 'Masonry'
 pod 'MJRefresh'
 pod 'SDWebImage'
+pod 'MJExtension'
 end
