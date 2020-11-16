@@ -15,6 +15,7 @@
 		180032BD251EEC310015055B /* LMHWaterFallController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180032B7251EEC310015055B /* LMHWaterFallController.m */; };
 		1816E3852562525B00C9C8CD /* LKTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816E3842562525B00C9C8CD /* LKTabbarButton.m */; };
 		1816E3882562527A00C9C8CD /* LKDirectionButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816E3872562527A00C9C8CD /* LKDirectionButtonViewController.m */; };
+		1816E38F25626A9200C9C8CD /* LKNumberOfLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1816E38D25626A9200C9C8CD /* LKNumberOfLabelsViewController.m */; };
 		182C260524650E0300ED4EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260424650E0300ED4EDE /* AppDelegate.m */; };
 		182C260824650E0300ED4EDE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182C260724650E0300ED4EDE /* SceneDelegate.m */; };
 		182C260E24650E0300ED4EDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182C260C24650E0300ED4EDE /* Main.storyboard */; };
@@ -84,6 +85,8 @@
 		1816E3842562525B00C9C8CD /* LKTabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTabbarButton.m; sourceTree = "<group>"; };
 		1816E3862562527A00C9C8CD /* LKDirectionButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKDirectionButtonViewController.h; sourceTree = "<group>"; };
 		1816E3872562527A00C9C8CD /* LKDirectionButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKDirectionButtonViewController.m; sourceTree = "<group>"; };
+		1816E38D25626A9200C9C8CD /* LKNumberOfLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNumberOfLabelsViewController.m; sourceTree = "<group>"; };
+		1816E38E25626A9200C9C8CD /* LKNumberOfLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNumberOfLabelsViewController.h; sourceTree = "<group>"; };
 		182C260024650E0300ED4EDE /* LXMPageVIew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXMPageVIew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182C260324650E0300ED4EDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		182C260424650E0300ED4EDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -232,6 +235,15 @@
 			path = LKDirectionButton;
 			sourceTree = "<group>";
 		};
+		1816E38925626A4C00C9C8CD /* numOfLabels */ = {
+			isa = PBXGroup;
+			children = (
+				1816E38E25626A9200C9C8CD /* LKNumberOfLabelsViewController.h */,
+				1816E38D25626A9200C9C8CD /* LKNumberOfLabelsViewController.m */,
+			);
+			path = numOfLabels;
+			sourceTree = "<group>";
+		};
 		182C25F724650E0300ED4EDE = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +276,7 @@
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
 				18C6B2BB251C79950003E3D4 /* TRViewController.h */,
 				18C6B2BC251C79950003E3D4 /* TRViewController.m */,
+				1816E38925626A4C00C9C8CD /* numOfLabels */,
 				1816E3822562525B00C9C8CD /* LKDirectionButton */,
 				180032AB251EEC310015055B /* waterFlow */,
 				18C6B2C4251C7C020003E3D4 /* pageView */,
@@ -633,6 +646,7 @@
 				18C6B2D8251C7C020003E3D4 /* LXMPageViewController.m in Sources */,
 				18C6B2DD251C7C020003E3D4 /* LXMCustomNavigationBar.m in Sources */,
 				180032BA251EEC310015055B /* LMHShop.m in Sources */,
+				1816E38F25626A9200C9C8CD /* LKNumberOfLabelsViewController.m in Sources */,
 				18C6B2D7251C7C020003E3D4 /* LXMPageView.m in Sources */,
 				18C6B2DB251C7C020003E3D4 /* LXMNestTableView.m in Sources */,
 				18C6B2BD251C79950003E3D4 /* TRViewController.m in Sources */,

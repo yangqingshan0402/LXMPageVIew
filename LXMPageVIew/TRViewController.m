@@ -21,14 +21,14 @@
 
 - (NSMutableArray *)viewControllerList{
     if (!_viewControllerList) {
-        _viewControllerList = [@[@"LXMArrowViewController", @"LXMVoiceViewController", @"LXMPageViewController", @"LMHWaterFallController", @"LKDirectionButtonViewController"] mutableCopy];
+        _viewControllerList = [@[@"LXMArrowViewController", @"LXMVoiceViewController", @"LXMPageViewController", @"LMHWaterFallController", @"LKDirectionButtonViewController", @"LKNumberOfLabelsViewController"] mutableCopy];
     }
     return _viewControllerList;
 }
 
 - (NSArray *)titleArray{
     if (!_titleArray) {
-        _titleArray = @[@"贝塞尔曲线画箭头", @"声音麦克风特效", @"类似淘宝吸顶效果", @"瀑布流", @"带方向的button"];
+        _titleArray = @[@"贝塞尔曲线画箭头", @"声音麦克风特效", @"类似淘宝吸顶效果", @"瀑布流", @"带方向的button", @"多行label排列转行"];
     }
     return _titleArray;
 }
