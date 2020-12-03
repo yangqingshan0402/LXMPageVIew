@@ -49,6 +49,10 @@
 		18C6B2DC251C7C020003E3D4 /* LXMSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2D3251C7C020003E3D4 /* LXMSegmentView.m */; };
 		18C6B2DD251C7C020003E3D4 /* LXMCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6B2D6251C7C020003E3D4 /* LXMCustomNavigationBar.m */; };
 		18C6C81324CFB0630040DCA1 /* LXMVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */; };
+		18D02D1B25788EE900DE8511 /* LKFloatWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D02D1A25788EE900DE8511 /* LKFloatWindow.m */; };
+		18D02D1E25788F2300DE8511 /* LKFloatWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D02D1D25788F2300DE8511 /* LKFloatWindowManager.m */; };
+		18D02D2125788F4A00DE8511 /* LKFloatWindowViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D02D2025788F4A00DE8511 /* LKFloatWindowViewModel.m */; };
+		18D02D242578920900DE8511 /* LKFloatWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D02D232578920900DE8511 /* LKFloatWindowViewController.m */; };
 		930C273055F6521CFF58398B /* libPods-LXMPageVIew.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ECD3A9A183C62D01CF2C472 /* libPods-LXMPageVIew.a */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +156,14 @@
 		18C6B2D6251C7C020003E3D4 /* LXMCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMCustomNavigationBar.m; sourceTree = "<group>"; };
 		18C6C81124CFB0630040DCA1 /* LXMVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXMVoiceView.h; sourceTree = "<group>"; };
 		18C6C81224CFB0630040DCA1 /* LXMVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXMVoiceView.m; sourceTree = "<group>"; };
+		18D02D1925788EE900DE8511 /* LKFloatWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatWindow.h; sourceTree = "<group>"; };
+		18D02D1A25788EE900DE8511 /* LKFloatWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatWindow.m; sourceTree = "<group>"; };
+		18D02D1C25788F2300DE8511 /* LKFloatWindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatWindowManager.h; sourceTree = "<group>"; };
+		18D02D1D25788F2300DE8511 /* LKFloatWindowManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatWindowManager.m; sourceTree = "<group>"; };
+		18D02D1F25788F4A00DE8511 /* LKFloatWindowViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatWindowViewModel.h; sourceTree = "<group>"; };
+		18D02D2025788F4A00DE8511 /* LKFloatWindowViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatWindowViewModel.m; sourceTree = "<group>"; };
+		18D02D222578920900DE8511 /* LKFloatWindowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKFloatWindowViewController.h; sourceTree = "<group>"; };
+		18D02D232578920900DE8511 /* LKFloatWindowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKFloatWindowViewController.m; sourceTree = "<group>"; };
 		9D2CA4E2A23FCEAC3E039F46 /* Pods-LXMPageVIew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.debug.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4EB115923D6C51034141B2 /* Pods-LXMPageVIew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXMPageVIew.release.xcconfig"; path = "Target Support Files/Pods-LXMPageVIew/Pods-LXMPageVIew.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -276,6 +288,7 @@
 				182C260724650E0300ED4EDE /* SceneDelegate.m */,
 				18C6B2BB251C79950003E3D4 /* TRViewController.h */,
 				18C6B2BC251C79950003E3D4 /* TRViewController.m */,
+				18D02D1825788EB100DE8511 /* floatWindow */,
 				1816E38925626A4C00C9C8CD /* numOfLabels */,
 				1816E3822562525B00C9C8CD /* LKDirectionButton */,
 				180032AB251EEC310015055B /* waterFlow */,
@@ -454,6 +467,21 @@
 				18C6B2C2251C7AEC0003E3D4 /* LXMVoiceViewController.m */,
 			);
 			path = voiceView;
+			sourceTree = "<group>";
+		};
+		18D02D1825788EB100DE8511 /* floatWindow */ = {
+			isa = PBXGroup;
+			children = (
+				18D02D1925788EE900DE8511 /* LKFloatWindow.h */,
+				18D02D1A25788EE900DE8511 /* LKFloatWindow.m */,
+				18D02D1C25788F2300DE8511 /* LKFloatWindowManager.h */,
+				18D02D1D25788F2300DE8511 /* LKFloatWindowManager.m */,
+				18D02D1F25788F4A00DE8511 /* LKFloatWindowViewModel.h */,
+				18D02D2025788F4A00DE8511 /* LKFloatWindowViewModel.m */,
+				18D02D222578920900DE8511 /* LKFloatWindowViewController.h */,
+				18D02D232578920900DE8511 /* LKFloatWindowViewController.m */,
+			);
+			path = floatWindow;
 			sourceTree = "<group>";
 		};
 		2E47E7760E0E7EE5F8512FF4 /* Frameworks */ = {
@@ -645,17 +673,20 @@
 				18C6C81324CFB0630040DCA1 /* LXMVoiceView.m in Sources */,
 				18C6B2D8251C7C020003E3D4 /* LXMPageViewController.m in Sources */,
 				18C6B2DD251C7C020003E3D4 /* LXMCustomNavigationBar.m in Sources */,
+				18D02D242578920900DE8511 /* LKFloatWindowViewController.m in Sources */,
 				180032BA251EEC310015055B /* LMHShop.m in Sources */,
 				1816E38F25626A9200C9C8CD /* LKNumberOfLabelsViewController.m in Sources */,
 				18C6B2D7251C7C020003E3D4 /* LXMPageView.m in Sources */,
 				18C6B2DB251C7C020003E3D4 /* LXMNestTableView.m in Sources */,
 				18C6B2BD251C79950003E3D4 /* TRViewController.m in Sources */,
+				18D02D2125788F4A00DE8511 /* LKFloatWindowViewModel.m in Sources */,
 				182C260524650E0300ED4EDE /* AppDelegate.m in Sources */,
 				182C267E246CDEBB00ED4EDE /* LXMBannerCollectionViewCell.m in Sources */,
 				1816E3852562525B00C9C8CD /* LKTabbarButton.m in Sources */,
 				18C6B2DC251C7C020003E3D4 /* LXMSegmentView.m in Sources */,
 				180032BD251EEC310015055B /* LMHWaterFallController.m in Sources */,
 				18A13C14251B509E001A5751 /* LXMArrowView.m in Sources */,
+				18D02D1E25788F2300DE8511 /* LKFloatWindowManager.m in Sources */,
 				1816E3882562527A00C9C8CD /* LKDirectionButtonViewController.m in Sources */,
 				182C2675246BBFFF00ED4EDE /* TAAbstractDotView.m in Sources */,
 				18C6B2DA251C7C020003E3D4 /* UIScrollView+ScrollAble.m in Sources */,
@@ -663,6 +694,7 @@
 				182C2670246BBFFF00ED4EDE /* UIView+SDExtension.m in Sources */,
 				182C2674246BBFFF00ED4EDE /* TAAnimatedDotView.m in Sources */,
 				182C2671246BBFFF00ED4EDE /* SDCollectionViewCell.m in Sources */,
+				18D02D1B25788EE900DE8511 /* LKFloatWindow.m in Sources */,
 				18C6B2D9251C7C020003E3D4 /* LXMNestView.m in Sources */,
 				182C261624650E0400ED4EDE /* main.m in Sources */,
 				180032BC251EEC310015055B /* LMHWaterFallLayout.m in Sources */,

@@ -1,6 +1,6 @@
 #import "SceneDelegate.h"
 #import "TRViewController.h"
-
+#import "LKFloatWindowManager.h"
 @interface SceneDelegate ()
 
 @end
